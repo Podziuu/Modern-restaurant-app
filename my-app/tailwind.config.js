@@ -16,7 +16,9 @@ module.exports = {
       "bg-pattern": "url('./assets/bg.png')",
     },
     fontFamily: {
-      body: ['"Cormorant Upright"'],
+      'body': ['"Cormorant Upright"'],
+      'sans': ['ui-sans-serif'],
+      'serif': ['ui-serif']
     },
   },
   plugins: [],
