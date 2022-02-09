@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import AboutUs from "./components/AboutUs";
 import Menu from './components/Menu';
 import Chef from './components/Chef'
+import Film from './components/Film'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutUs />
       <Menu />
       <Chef />
+      <Film />
     </div>
   );
 }
