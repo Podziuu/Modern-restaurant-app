@@ -21,7 +21,9 @@ const Header = () => {
             fill="#DCCA87"
           />
         </svg>
-        <h1 className="text-[#DCCA87] font-bold text-6xl leading-relaxed">The Key To Fine Dining</h1>
+        <h1 className="text-[#DCCA87] font-bold text-6xl leading-relaxed">
+          The Key To Fine Dining
+        </h1>
         <p className="text-[#AAAAAA] mb-6">
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis quam scelerisque sapien. Et, penatibus

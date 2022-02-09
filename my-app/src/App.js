@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import Menu from './components/Menu';
 import Chef from './components/Chef'
 import Film from './components/Film'
+import Awards from './components/Awards'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Menu />
       <Chef />
       <Film />
+      <Awards />
     </div>
   );
 }
