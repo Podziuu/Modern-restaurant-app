@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import Chef from './components/Chef'
 import Film from './components/Film'
 import Awards from './components/Awards'
+import Galery from "./components/Galery";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Chef />
       <Film />
       <Awards />
+      <Galery />
     </div>
   );
 }

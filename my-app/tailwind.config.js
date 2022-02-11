@@ -20,6 +20,9 @@ module.exports = {
       'sans': ['ui-sans-serif'],
       'serif': ['ui-serif']
     },
+    maxWidth: {
+      '1/2': '50%',
+    },
   },
   plugins: [],
 };
