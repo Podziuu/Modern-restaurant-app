@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="sm:block md:hidden">
         <GiHamburgerMenu fontSize={27} onClick={clickHandler} className="cursor-pointer" />
         {showMenu && (
-          <div className="bg-[#0C0B08] absolute w-screen h-screen left-0 top-0 flex justify-center items-center animate-slide">
+          <div className="bg-[#0C0B08] w-screen h-screen left-0 top-0 flex justify-center items-center animate-slide fixed z-40">
             <MdOutlineRestaurantMenu className="text-[#DCCA87] absolute top-4 right-8 text-3xl cursor-pointer" onClick={clickHandler} />
             <ul className="text-[#DCCA87] text-4xl flex flex-col justify-around h-72">
               <li>

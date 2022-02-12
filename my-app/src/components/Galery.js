@@ -1,11 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Button from "./Layout/Button";
 
-import {
-  BsInstagram,
-  BsArrowLeftShort,
-  BsArrowRightShort,
-} from "react-icons/bs";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import gallery01 from "../assets/gallery01.png";
 import gallery02 from "../assets/gallery02.png";
 import gallery03 from "../assets/gallery03.png";
@@ -36,8 +32,8 @@ const Galery = () => {
   console.log(galleryRef);
 
   return (
-    <Container className="bg-[#0C0B08] flex items-center justify-between py-16">
-      <div className="w-1/3 mr-6">
+    <Container className="bg-[#0C0B08] flex items-center justify-between py-16 flex-col md:flex-row">
+      <div className="w-3/4 md:w-1/3 md:mr-6">
         <h3 className="text-white text-lg">Instagram</h3>
         <svg
           width="40"
@@ -51,29 +47,31 @@ const Galery = () => {
             fill="#DCCA87"
           />
         </svg>
-        <h2 className="text-[#DCCA87] text-5xl my-6 font-semibold">Photo Gallery</h2>
+        <h2 className="text-[#DCCA87] text-5xl my-6 font-semibold">
+          Photo Gallery
+        </h2>
         <p className="text-[#AAAAAA] mb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
           mattis ipsum turpis elit elit scelerisque egestas mu.
         </p>
         <Button text="View More" />
       </div>
-      <div className="w-2/3 relative">
+      <div className="w-3/4 mt-8 md:mt-0 md:w-2/3 relative">
         <div
-          className="flex flex-row overflow-x-hidden relative"
+          className="flex flex-row overflow-x-hidden relative z-10"
           ref={galleryRef}
         >
           {[gallery01, gallery02, gallery03, gallery04].map((image, index) => {
             return <ImageGallery image={image} key={index} />;
           })}
         </div>
-        <div className="absolute inset-0 z-40">
+        <div className="absolute inset-0">
           <BsArrowLeftShort
-            className="absolute bottom-2 left-2 bg-[#0C0B08] text-[#DCCA87] rounded-full text-2xl cursor-pointer"
+            className="absolute bottom-2 left-2 bg-[#0C0B08] text-[#DCCA87] rounded-full text-2xl cursor-pointer z-20"
             onClick={() => clickHandler("left")}
           />
           <BsArrowRightShort
-            className="absolute bottom-2 right-2 bg-[#0C0B08] text-[#DCCA87] rounded-full text-2xl cursor-pointer"
+            className="absolute bottom-2 right-2 bg-[#0C0B08] text-[#DCCA87] rounded-full text-2xl cursor-pointer z-20"
             onClick={() => clickHandler("right")}
           />
         </div>
