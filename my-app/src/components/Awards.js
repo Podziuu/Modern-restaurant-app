@@ -11,7 +11,7 @@ import logo from '../assets/logo.png'
 
 const Awards = () => {
   return (
-    <Container className="relative bg-bg-pattern bg-center bg-cover bg-fixed h-full py-8 md:py-0 md:h-screen flex flex-col md:flex-row justify-between items-center">
+    <Container id="awards" className="relative bg-bg-pattern bg-center bg-cover bg-fixed h-full py-8 md:py-0 md:h-screen flex flex-col md:flex-row justify-between items-center">
       <div>
         <h3 className="text-white text-lg">Awards & Recognition</h3>
         <svg

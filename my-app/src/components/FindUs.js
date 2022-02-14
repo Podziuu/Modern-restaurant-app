@@ -5,7 +5,7 @@ import Button from "./Layout/Button";
 
 const FindUs = () => {
   return (
-    <Container className="bg-bg-pattern bg-center bg-cover bg-fixed h-full sm:h-screen flex items-center justify-between flex-col sm:flex-row">
+    <Container id="contact" className="bg-bg-pattern bg-center bg-cover bg-fixed h-full sm:h-screen flex items-center justify-between flex-col sm:flex-row py-8 sm:py-0">
       <div className="sm-4/5 sm:w-1/2">
         <h3 className="text-white">Contact</h3>
         <svg
@@ -30,7 +30,7 @@ const FindUs = () => {
         <Button text="Visit Us" className="mt-12" />
       </div>
       <div className="w-4/5 sm:w-1/2 mt-12 sm:mt-0">
-        <img src={findus} />
+        <img className="w-4/5" src={findus} />
       </div>
     </Container>
   );

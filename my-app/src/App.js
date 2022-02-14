@@ -7,6 +7,7 @@ import Film from "./components/Film";
 import Awards from "./components/Awards";
 import Galery from "./components/Galery";
 import FindUs from "./components/FindUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Awards />
       <Galery />
       <FindUs />
+      <Footer />
     </div>
   );
 }
