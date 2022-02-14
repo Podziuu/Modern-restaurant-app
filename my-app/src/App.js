@@ -1,11 +1,12 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutUs from "./components/AboutUs";
-import Menu from './components/Menu';
-import Chef from './components/Chef'
-import Film from './components/Film'
-import Awards from './components/Awards'
+import Menu from "./components/Menu";
+import Chef from "./components/Chef";
+import Film from "./components/Film";
+import Awards from "./components/Awards";
 import Galery from "./components/Galery";
+import FindUs from "./components/FindUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Film />
       <Awards />
       <Galery />
+      <FindUs />
     </div>
   );
 }
